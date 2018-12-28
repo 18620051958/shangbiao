@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/vue.js"></script>
+    <style> html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        outline: none;
+    }
+
+    #tr td {
+        padding-right: 0.5rem;
+    }
+
+    #text {
+        width: 50%;
+        height: 50%;
+        background: #000;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #B1B1B1;
+    }
+
+    a:link {
+    }
+
+    a:visited {
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    </style>
+</head>
+<body>
+<div> <!--log区-->
+    <div style="height: 4.1875rem;
+ width: 100%;
+ background: rosybrown;
+ "></div> <!--图片区-->
+    <div style="background: #e5e5e5;
+ width: 100%;
+ height: 26.6875rem;
+ ">
+        <div style="width: 71.125rem;
+ height: 26.6875rem;
+ background: #8b231c;
+ margin:0 auto;
+ position: relative;
+ "> <!--登录方式选择区-->
+            <div id="text" style="width: 17.125rem;
+ height: 20.625rem;
+ background: #fff;
+ float: right;
+ margin-right: 8.5625rem;
+ ">
+                <div style="display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-top: 1.5625rem;
+ margin-bottom: 1.6875rem;
+ ">
+                    <table>
+                        <tr>
+                            <td style="padding-right: 0.625rem;
+ font-size: 1.125rem;
+ color: #626262;
+ ">会员登入
+                            </td>
+                            <td style="border-right:0.0625rem solid #e5e5e5;
+ "></td>
+                            <td style="padding-left: 0.625rem;
+ font-size: 1.125rem;
+ color: #626262;
+ ">社交登入
+                            </td>
+                        </tr>
+                    </table> <!--<div style="margin-bottom: 0.3125rem;
+ ">会员登入</div>--> <!--<div style="border-right: 0.0625rem solid #e5e5e5;
+ "></div>--> <!--<div>社交登入</div>--> </div> <!--输入区-->
+                <div style="padding-left: 1.25rem;
+ ">
+                    <div><input type="number" placeholder="手机号码" style="width: 14.375rem;
+ line-height: 2rem;
+ margin-bottom: 0.9375rem;
+ " oninput="if(value.length>11)value=value.slice(0,11)">
+                        <div style="display: flex;
+ flex-direction: row;
+ margin-bottom: 0.9375rem;
+ "><input type="text" placeholder="验证码" style="width: 9.0625rem;
+ line-height: 2rem;
+ padding-right: 0.3125rem;
+ ">
+                            <button style="width: 5rem;
+ line-height: 2rem;
+ font-size: 0.75rem;
+ background: #B1B1B1;
+ color:#fff;
+ border:none;
+ ">获取验证码
+                            </button>
+                        </div>
+                        <button style="width: 14.375rem;
+ line-height: 2rem;
+ font-size: 0.75rem;
+ background: #8b231c;
+ margin-bottom: 0.625rem;
+ border:none;
+ "> <span style="color: #fff;
+ font-size: 1rem;
+ ">立刻登录</span></button>
+                    </div>
+                    <div><input name="pow" type="checkbox" value="1"/> <span style="color:#B1B1B1;
+ font-size: 0.875rem;
+ ">3天免登录</span></div>
+                    <div style="font-size:0.875rem;
+ color:#B1B1B1;
+ float: right;
+ padding-right: 0.625rem;
+ padding-top: 2.8125rem;
+ ">
+                        <table>
+                            <tr id="tr">
+                                <td><a href="">忘记密码</a></td>
+                                <td><a href="">忘记会员名</a></td>
+                                <td><a href="">免费注册</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
+</body>
+</html>
